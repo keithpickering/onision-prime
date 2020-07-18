@@ -52,7 +52,60 @@
     </section>
     <section>
       <h2>Gregory &ldquo;Greg&rdquo; Jameson:<br><small>Professional Crying Poop Clown</small></h2>
-      <p>Please follow this page for more wacky internet comdedy</p>
+      <p>Please follow this page for more wacky internet hijinks. I am always looking for new ways to debase myself and then claim that it was a jokek later.</p>
+    </section>
+    <section>
+      <h2>Frequently asked questions*</h2>
+      
+      <ul class="faqs">
+        <li>
+          <h3>How can I join the Onision harem?</h3>
+          <p>The Onision harem is always accepting new members, the only requirements are that you have to be under 70 pounds and come from a troubled family background. Onision is baseically
+            like Jared the subway guy except he hasn't been arrested yet.</p>
+        </li>
+        <li>
+          <h3>Dude, did you really poop on your back?</h3>
+          <p>LOL no, Onision only <em>pretended</em> to poop on his back. That's WAY different and cooler.</p>
+        </li>
+        <li>
+          <h3>You realize pretending to be an idiot doesn't accomplish anything but make you look like an idiot though, right?</h3>
+          <p>Onision doesn't expect peons such as yourself to understand the subtleties of his actions.</p>
+        </li>
+        <li>
+          <h3>Where did Onision grow up?</h3>
+          <p>Ha, trick question!</p>
+        </li>
+        <li>
+          <h3>What is Onision's age?</h3>
+          <p>Onision is only <span id="age">34</span> years old (and not a day older), but mentally he's perpetually 17.</p>
+        </li>
+        <li>
+          <h3>Did Onision seriously change his name to the name of the Mary Sue protagonist from his children's book?</h3>
+          <p>Yes.</p>
+        </li>
+        <li>
+          <h3>Wow.</h3>
+          <p>Yeah, the psychoanalysts must have a field day with this one.</p>
+        </li>
+        <li>
+          <h3>Is Onision dead?</h3>
+          <p>Only on the inside, and the pelvic area whenever the pile of garbage in my house gets so deep that I can't find my cock pump.</p>
+        </li>
+        <li>
+          <h3>After Onision gets too visibly old to bring in young girls to groom and leech talent from, what will he do for a living?</h3>
+          <p>...</p>
+        </li>
+        <li>
+          <h3>Is Onision a dad?</h3>
+          <p>Oh shit, you're right! I better check the second-story window, brb!</p>
+        </li>
+      </ul>
+      
+      <p style="color:rgba(255,255,255,0.1)">
+        *Nobody has ever actually asked me any of these questions, or any other question about my life, 
+        other than "holy shit, isn't that Onision, the world-renowned sex trafficker extraordinaire?"
+        Also, by reading this sentence you agree to be chained in my basement for an indeterminate amount of time.
+      </p>
     </section>
     <script>
       (function() {
@@ -64,10 +117,20 @@
           "Eh, you look old enough to me",
           "Only friends with people who literally pay me",
           "Leave me alone Chris!!!!!",
-          "Everyone is an idiot except for me"
+          "Everyone is an idiot except for me",
+          "YOU WOULD REALLY DO THAT!!?"
         ];
         var item = items[Math.floor(Math.random() * items.length)];
         document.querySelector('#subtitle').innerHTML = item;
+      })();
+      
+      (function() {
+        var ageEl = document.querySelector('#age');
+        var age = parseInt(ageEl.innerHTML);
+        setInterval(function() {
+          age += 1;
+          ageEl.innerHTML = age;
+        }, 1000);
       })();
     </script>
   </body>
