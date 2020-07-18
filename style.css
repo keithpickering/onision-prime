@@ -137,3 +137,8 @@ dt {
 .faqs li {
   margin-top: 69px;
 }
+.muted {
+  color: rgba(255,255,255,0.1);
+  font-size: 18px;
+  text-align: left;
+}
