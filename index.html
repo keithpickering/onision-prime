@@ -45,6 +45,27 @@
       a:focus {
         color: #FBC02D;
       }
+      a[disabled] {
+        position: relative;
+      }
+      a[disabled] .media {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0,0,0,0.69);
+      }
+      .media {
+        display: flex;
+      }
+      .media > img {
+        margin-right: 18px;
+        width: 36px;
+      }
+      .media > p {
+        font-size: 12px;
+      }
       dd, dt {
         font-weight: 400;
       }
