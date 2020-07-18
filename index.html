@@ -21,18 +21,23 @@
         font-size: 69px;
         margin: 0;
       }
+      .subtitle {
+        font-size: 24px;
+        font-style: italic;
+      }
       h2 {
         background: white;
         color: black;
         text-transform: uppercase;
         margin: 0 auto 37px;
+        padding: 0 12px;
         width: fit-content;
       }
       p {
         margin: 0 0 37px;
       }
       section {
-        padding: 75px;
+        padding: 75px 37px;
       }
       .PRIME {
         text-decoration: underline;
@@ -63,21 +68,31 @@
       .media > img {
         margin-right: 18px;
         width: 36px;
+        height: 46px;
       }
       .media > p {
         font-size: 12px;
       }
       dl div {
         display: flex;
+        margin-bottom: 6px;
       }
       dd, dt {
         font-weight: 400;
+        text-align: left;
+      }
+      dt {
+        flex: 0 0 auto;
+        margin-right: 18px;
       }
     </style>
   </head>
   <body>
     <header>
-      <h1>ONISION <span class="PRIME">PRIME</span></h1>
+      <h1>
+        ONISION <span class="PRIME">PRIME</span>
+        <p id="subtitle" class="subtitle"></p>
+      </h1>
     </header>
     <section>
       <h2>Hey, want to see my junk?</h2>
@@ -118,5 +133,20 @@
       <h2>Greg &ldquo;Greg&rdquo; Gregson: Professional Crying Poop Clown</h2>
       <p>Please follow this page for more wacky internet comdedy</p>
     </section>
+    <script>
+      (function() {
+        var items = [
+          "It's like Optimus Prime but worse",
+          "18½% off for a limited time",
+          "Nobody tell jeff bezos I'm using the word Prime",
+          "Imagine the peak of your life being the i'm a banana song",
+          "Eh, you look old enough to me",
+          "Only friends with people who literally pay me",
+          "Leave me alone Chris!!!!!"
+        ];
+        var item = items[Math.floor(Math.random() * items.length)];
+        document.querySelector('#subtitle').innerHTML = item;
+      })();
+    </script>
   </body>
 </html>
